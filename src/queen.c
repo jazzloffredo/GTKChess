@@ -1,10 +1,20 @@
+//
+//  queen.c
+//  CIS 308 Final Project
+//
+//  Created by Jazz Loffredo and Zayin Brunson
+//  Copyright © 2018 Jazz Loffredo and Zayin Brunson. All rights reserved.
+//
+
+// Include pre-defined header files.
 #include <stdlib.h>
 
+// Include user-defined header files.
 #include "queen.h"
 #include "types.h"
 #include "piece.h"
 
-// generates a new Piece object that is a Queen.
+// generates a new Piece pointer that is a Queen.
 Piece * make_new_queen(Color c, int xPos, int yPos){
 	Queen * q = malloc(sizeof(Queen));
 	

@@ -1,9 +1,20 @@
+//
+//  pawn.c
+//  CIS 308 Final Project
+//
+//  Created by Jazz Loffredo and Zayin Brunson
+//  Copyright © 2018 Jazz Loffredo and Zayin Brunson. All rights reserved.
+//
+
+// Include pre-defined header files
 #include <stdlib.h>
 
+// Include user-defined header files
 #include "pawn.h"
 #include "types.h"
 #include "piece.h"
 
+// generates a new Piece pointer that is a Pawn.
 Piece * make_new_pawn(Color c, int xPos, int yPos){
 	Pawn * p = malloc(sizeof(Pawn));
 	

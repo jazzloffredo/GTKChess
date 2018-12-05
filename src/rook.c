@@ -1,10 +1,20 @@
+//
+//  rook.c
+//  CIS 308 Final Project
+//
+//  Created by Jazz Loffredo and Zayin Brunson
+//  Copyright © 2018 Jazz Loffredo and Zayin Brunson. All rights reserved.
+//
+
+// Include pre-defined header files.
 #include <stdlib.h>
 
+// Include user-defined header files.
 #include "rook.h"
 #include "types.h"
 #include "piece.h"
 
-// generates a new Piece object that is a Rook.
+// generates a new Piece pointer that is a Rook.
 Piece * make_new_rook(Color c, int xPos, int yPos){
 	Rook * r = malloc(sizeof(Rook));
 	
