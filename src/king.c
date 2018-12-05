@@ -1,10 +1,20 @@
+//
+//  king.c 
+//  CIS 308 Final Project 
+//
+//  Created by Jazz Loffredo and Zayin Brunson
+//  Copyright © 2018 Jazz Loffredo and Zayin Brunson. All rights reserved.
+//
+
+// Include pre-defined header files.
 #include <stdlib.h>
 
+// Include user-defined header files.
 #include "king.h"
 #include "types.h"
 #include "piece.h"
 
-// generates a new Piece object that is a King.
+// generates a new Piece pointer that is a King.
 Piece * make_new_king(Color c, int xPos, int yPos){
 	King * k = malloc(sizeof(King));
 	
@@ -19,10 +29,10 @@ Piece * make_new_king(Color c, int xPos, int yPos){
 	return (Piece *)k;
 }
 
-
 // given a board, current selected piece, current position and new position
 // checks if the king has made a valid move
 boolean check_valid_move_king(Piece* pieces[8][8], Piece * self, Position curPos, Position newPos){
+	
 	// generate valid move array
 	boolean possible_moves[8][8];
 	for(int i = 0; i < 8; i++){

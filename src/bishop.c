@@ -1,10 +1,20 @@
+//
+//  bishop.c 
+//  CIS 308 Final Project 
+//
+//  Created by Jazz Loffredo and Zayin Brunson
+//  Copyright © 2018 Jazz Loffredo and Zayin Brunson. All rights reserved.
+//
+
+// Include pre-defined header files.
 #include <stdlib.h>
 
+// Include user-defined header files.
 #include "bishop.h"
 #include "types.h"
 #include "piece.h"
 
-// generates a new Piece object that is a Bishop.
+// generates a new Piece pointer that is a Bishop.
 Piece * make_new_bishop(Color c, int xPos, int yPos){
 	Bishop * b = malloc(sizeof(Bishop));
 	

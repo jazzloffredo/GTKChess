@@ -1,10 +1,20 @@
+//
+//  knight.c 
+//  CIS 308 Final Project 
+//
+//  Created by Jazz Loffredo and Zayin Brunson
+//  Copyright © 2018 Jazz Loffredo and Zayin Brunson. All rights reserved.
+//
+
+// Include pre-defined header files.
 #include <stdlib.h>
 
+// Include user-defined header files.
 #include "knight.h"
 #include "types.h"
 #include "piece.h"
 
-// generates a new Piece object that is a Knight.
+// generates a new Piece pointer that is a Knight.
 Piece * make_new_knight(Color c, int xPos, int yPos){
 	Knight * n = malloc(sizeof(Knight));
 	
@@ -21,6 +31,7 @@ Piece * make_new_knight(Color c, int xPos, int yPos){
 // given a board, current selected piece, current position and new position
 // checks if the bishop has made a valid move
 boolean check_valid_move_knight(Piece* pieces[8][8], Piece * self, Position curPos, Position newPos){
+	
 	int xRightOne = curPos.x + 1;
 	int xLeftOne = curPos.x - 1;
 	int xRightTwo = curPos.x + 2;
